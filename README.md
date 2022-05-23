@@ -46,6 +46,31 @@ return cocktails;
 This code can be find inside a get response
 
 
+# Now we add a new service to interact with injection
+(I need to search more information about this concept)
+https://docs.nestjs.com/providers
 
+yarn nest g service prisma
 
+Starting and prevent shutdown:
+@Injectable()
+export class PrismaService extends PrismaClient implements OnModuleInit {
+    async onModuleInit() {
+        await this.$connect();
+    }
+    async enableShutdownHook(app: INestApplication) {
+        this.$on('beforeExit', async () => {
+            await this.$disconnect();
+            app.close();
+        });
+    }
+}
 
+Also add the last method to the main.ts
+const prismaService: PrismaService = app.get(PrismaService);
+prismaService.enableShutdownHook(app);
+
+Now we can add the service to our cocktails' controller with 
+constructor(private prisma: PrismaService) {}
+And directly call him during the request of the DB:
+const cocktails = await this.prisma.cocktail.findMany()

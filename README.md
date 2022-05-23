@@ -3,6 +3,11 @@
 This is the tutorial how i build my application web, firstly i will explain how i build the server and connect to the api (thecocktaildb)
 It's not very useful if you know yarn / nestJS but it's a memo for my future me. :)
 
+npm install --global yarn
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install yarn
+
 npx @nestjs/cli new CocktailWeb-server
 # Choose yarn
 
@@ -74,3 +79,34 @@ Now we can add the service to our cocktails' controller with
 constructor(private prisma: PrismaService) {}
 And directly call him during the request of the DB:
 const cocktails = await this.prisma.cocktail.findMany()
+
+Now i will the structure the data i receive inside a dto
+
+interface CocktailDTO {
+    id: number;
+    name: string;
+    description: string;
+    ....
+}
+
+Now i can map the data of the db to the dto
+const cocktailDTO: CocktailDTO[] = cocktails.map(cocktail => (
+    {
+        id: cocktail.id,
+        name: cocktail.name,
+        description: cocktail.description,
+        ...
+    }
+));
+)
+
+
+And now i can add different route to the server (all the fonctionnality of the webapp)
+
+# Interaction with the API
+
+We will use the library axios to interact with the api
+
+yarn add axios
+
+# Structure Code

@@ -1,5 +1,8 @@
 # cocktailproject
 
+This is the tutorial how i build my application web, firstly i will explain how i build the server and connect to the api (thecocktaildb)
+It's not very useful if you know yarn / nestJS but it's a memo for my future me. :)
+
 npx @nestjs/cli new CocktailWeb-server
 # Choose yarn
 
@@ -33,6 +36,16 @@ yarn prisma migrate dev --name cocktails --create-only
 yarn prisma migrate dev
 
 4. Now we can see the db in your admin pannel
+
+5. To catch the different element of the db in your code we use the PrismaClient
+
+const client = new PrismaClient();
+const cocktails = await client.cocktails.findMany();
+return cocktails;
+
+This code can be find inside a get response
+
+
 
 
 

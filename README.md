@@ -12,15 +12,15 @@ Je les ai écrites dans l'ordre de priorité. En effet dans un premier temps, il
 ---
 #TODO LIST
 
-Implémenter la db et la page admin avec le docker-compose déjà présent
-Implémenter la barre de recherche
-Mettre en place la selection random
-Mettre en place un système de login et de favori
-Faire la vue détaillé
-Faire une recherche par Ingrédient
-Lister les ingrédients qu'on a et voir quelle cocktail on peut réaliser
-Système de notation
-Ajouter ses propres cocktails dans la db du site
+- Implémenter la db et la page admin avec le docker-compose déjà présent
+- Implémenter la barre de recherche
+- Mettre en place la selection random
+- Mettre en place un système de login et de favori
+- Faire la vue détaillé
+- Faire une recherche par Ingrédient
+- Lister les ingrédients qu'on a et voir quelle cocktail on peut réaliser
+- Système de notation
+- Ajouter ses propres cocktails dans la db du site
 
 ---
 

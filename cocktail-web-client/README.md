@@ -10,6 +10,8 @@ In the project directory, you can run:
 
 ### `yarn install`
 
+---
+
 ### `npm start`
 
 Runs the app in the development mode.\

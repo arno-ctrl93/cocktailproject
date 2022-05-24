@@ -1,5 +1,10 @@
 # cocktailproject
 
+
+
+
+# cocktail server tuto
+
 This is the tutorial how i build my application web, firstly i will explain how i build the server and connect to the api (thecocktaildb)
 It's not very useful if you know yarn / nestJS but it's a memo for my future me. :)
 

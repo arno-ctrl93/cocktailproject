@@ -10,7 +10,7 @@
 Je les ai écrites dans l'ordre de priorité. En effet dans un premier temps, il faut que tout le monde est le même langage pour communiquer. Ensuite, il faut que malgré le fait que plusieurs personnes travaillent sur le même projet, il y est le moins de conflit ou d'éléments qui pourraient retarder le déploiement. Et dans un troisième temps quand tout le monde peut comprendre et travailler sur l'application, que chacun puisse aussi être acteur et force de proposition dans le développement de l'app. 
 
 ---
-#TODO LIST
+# TODO LIST
 
 - Implémenter la db et la page admin avec le docker-compose déjà présent
 - Implémenter la barre de recherche

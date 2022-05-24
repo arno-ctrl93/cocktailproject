@@ -1,7 +1,14 @@
-.cart{
+.cart {
     background-color: #4C5464;
     display: flex;
+    color: #FCF4EF;
     flex-direction: column;
     justify-content: flex-start;
-    width: 400px;
+    width: 500px;
+}
+
+.container-cart{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
 }

@@ -1,0 +1,25 @@
+.banner {
+    color: #FCF4EF;
+    text-align: right;
+    padding: 32px;
+    border-bottom: solid 5px #FCF4EF;
+    background-color: #FC7061;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: right;
+}
+.title{
+    color: #4C5464;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.description{
+    font-style: italic;
+    font-size: 25px;
+    color: #FCF4EF;
+    margin-top: 10px;
+}

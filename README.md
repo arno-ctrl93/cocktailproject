@@ -1,6 +1,14 @@
 # cocktailproject
 
 
+# Question sur l'arrivée de 5 nouveaux développeurs dans l'environment de dev:
+- Réfléchir à une Coding Style, à des conventions pour faciliter la parcours du code et sa lisibilité. En effet, avoir une convention d'écriture permet de gagner beaucoup de temps lors de l'arrivé sur le projet ou pour comprendre des bouts de code plus ancien ou d'une autre personne.
+- Mettre en place un git avec un système de test auto avant le merge de branch afin d'éviter qu'une personne déploie une version totalement beugé en ayant rajouté des features.
+- Après la mise en place de la DB, réussir à que chacun est son image (Docker) perso pour pouvoir tester en local plutôt que sur la db officiel, même idée que la proposition d'avant et éviter de casser l'application lors de sa phase de production par une mauvaise manip.
+- Assurer un espace de paroles sur un forum pour que les futurs features puissent venir aussi de l'équipe de dev. Cela me semble important, car c'est eux/nous qui sommes plongés dans ce code et il me semble important de laisser la parole aux développeurs qui ont une vision réaliste de ce qui est faisable ou pas.
+
+Je les ai écrites dans l'ordre de priorité. En effet dans un premier temps, il faut que tout le monde est le même langage pour communiquer. Ensuite, il faut que malgré le fait que plusieurs personnes travaillent sur le même projet, il y est le moins de conflit ou d'éléments qui pourraient retarder le déploiement. Et dans un troisième temps quand tout le monde peut comprendre et travailler sur l'application, que chacun puisse aussi être acteur et force de proposition dans le développement de l'app. 
+
 
 
 # cocktail server tuto

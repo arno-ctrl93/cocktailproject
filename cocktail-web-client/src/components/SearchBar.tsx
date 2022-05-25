@@ -1,23 +1,27 @@
 import { useState } from "react";
 import '../styles/SearchBar.css';
 
+import FindAllNames from "../method/Searchmethod";
 
-function SearchBar(){
-    const[input, setInput] = useState('');
+function SearchBar({WhichCocktail, UpdateCocktail} : {WhichCocktail : string, UpdateCocktail : Function}){
+    const [name, setName] = useState<string>('');
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setInput(event.target.value);
+        setName(event.target.value);
     };
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        setInput('');
+        console.log("the name searched "+ name);
+        UpdateCocktail(name);
+        setName('');
     };
 
     return (
         <form className="search-bar" onSubmit={handleSubmit}>
-            <input name="text" className="input-search" type="text" value={input} onChange={handleChange}/>
-            <button className="button-search" type="submit">Search</button>
+            <input name="text" className="input-search" type="text" value={name} onChange={handleChange}>
+            </input>
+            <button className="button-search" type="submit"  >Search</button>
         </form>
     )
 }

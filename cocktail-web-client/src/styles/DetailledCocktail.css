@@ -1,0 +1,63 @@
+.DetailledView{
+    text-align: -webkit-center;
+    background-color: #282F44;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    color: white;
+    border-radius: 37px;
+}
+
+.DTitle{
+    
+    margin: 61px;
+    color: #ffbd59;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.DInstruction{
+    font-size: 25px;
+    margin: 80px;
+}
+
+.CategoryIng{
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffbd59;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.DIngredient{
+    display: flex;
+    place-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.DIngredientName {
+    font-weight: bold;
+}
+
+.DIngredientMesurement{
+    margin-left: 40px;
+    font-style: italic;
+    color: #ffbd59;
+}
+
+.buttonback{
+    
+    border-radius: 44px;
+    margin: 29px;
+    font-size: 20px;
+    background-color: white;
+    height: 60px;
+    width: 150px;
+    color: #282F44;
+}

@@ -1,5 +1,8 @@
 .cocktail-item {
-    margin: 10px;
+    margin: 30px;
+    border-radius: 20px;
+    border: solid 2px;
+    background-color: #282F44;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,20 +11,24 @@
 }
 
 .cocktail-item_image {
-    height: 250px;
-    width: 250px;
-    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 420px;
 }
 
 .cocktail-list {
-    list-style-type: none;
-    padding: 32px;
+    padding-inline-start: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    max-width: 1000px;
 
 }
 
 .item-name{
-    margin-top: '10px';
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    margin: 10px;
 }

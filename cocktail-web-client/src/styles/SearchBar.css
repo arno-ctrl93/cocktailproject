@@ -1,0 +1,27 @@
+.input-search {
+    color: black;
+    width: 80%;
+    height: 54px;
+    font-size: 30px;
+    align-content: center;
+    text-align: center;
+    border-radius: 47px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search-bar {
+    text-align: -webkit-center;
+    margin-top: 50px;
+}
+
+.button-search {
+    border-radius: 44px;
+    background-color: #282F44;
+    height: 60px;
+    width: 150px;
+    color: white;
+}

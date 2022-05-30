@@ -6,12 +6,12 @@ function FooterCocktail(){
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setMail(event.target.value);
-        console.log(mail);
+        // console.log(mail);
     };
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        console.log("the mail: " + mail);
+        // console.log("the mail: " + mail);
     }
 
 

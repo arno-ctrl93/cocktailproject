@@ -1,7 +1,7 @@
 import { useState } from "react";
 import '../styles/SearchBar.css';
 
-import FindAllNames from "../method/Searchmethod";
+//import FindAllNames from "../method/Searchmethod";
 
 function SearchBar({WhichCocktail, UpdateCocktail} : {WhichCocktail : string, UpdateCocktail : Function}){
     const [name, setName] = useState<string>('');
@@ -12,7 +12,7 @@ function SearchBar({WhichCocktail, UpdateCocktail} : {WhichCocktail : string, Up
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        console.log("the name searched "+ name);
+        // console.log("the name searched "+ name);
         UpdateCocktail(name);
         setName('');
     };

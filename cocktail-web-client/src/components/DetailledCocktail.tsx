@@ -11,10 +11,10 @@ function DetailledCocktail({WhichCocktail, UpdateCocktail} : {WhichCocktail : st
     const[cocktail, setCocktail] = useState< DetailledCocktailDTO| null>(null);
     useEffect(() => {
         const fetchCocktails = async () => {
-            console.log("the  requests  http://localhost:3000/cocktails/searchbyname/"+ WhichCocktail);
+            // console.log("the  requests  http://localhost:3000/cocktails/searchbyname/"+ WhichCocktail);
             const response = await fetch('http://localhost:3000/cocktails/searchbyname/' + WhichCocktail);
             const content = (await response.json()) as DetailledCocktailDTO[];
-            console.log(content);
+            // console.log(content);
             setCocktail(content[0]);
         };
         fetchCocktails();

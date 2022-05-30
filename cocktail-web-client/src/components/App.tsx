@@ -16,8 +16,9 @@ function App() {
       <Banner></Banner>
       <SearchBar WhichCocktail={WhichCocktail} UpdateCocktail={UpdateCocktail}></SearchBar>
       {
-        (WhichCocktail == '') ? 
+        (WhichCocktail === '') ? 
         <CocktailList WhichCocktail={WhichCocktail} UpdateCocktail={UpdateCocktail}></CocktailList> 
+        
         : <DetailledCocktail WhichCocktail={WhichCocktail} UpdateCocktail={UpdateCocktail}></DetailledCocktail>
       }
       <FooterCocktail></FooterCocktail>
